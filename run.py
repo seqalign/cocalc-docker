@@ -141,10 +141,10 @@ def tail_logs():
     run("tail -f /var/log/compute.log /var/log/compute.err /cocalc/logs/*")
 
 def main():
-    self_signed_cert('/run/haproxy.pem')
+    #self_signed_cert('/run/haproxy.pem')
     init_projects_path()
     start_services()
-    root_ssh_keys()
+    #root_ssh_keys()
     start_postgres()
     start_hub()
     start_compute()
